@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Liang Yin — Ph.D. student at UCAS working on materials informatics, machine learning interatomic potentials, and intelligent agents for scientific discovery.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Liang Yin | Materials Science & AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#about" aria-label="Liang Yin home">Liang Yin<span lang="zh">殷亮</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="intro" id="about" aria-labelledby="name">
+      <div class="intro-copy">
+        <p class="eyebrow">Materials science & artificial intelligence</p>
+        <h1 id="name">Liang Yin <span lang="zh">殷亮</span></h1>
+        <p class="position">Ph.D. Student<br>University of Chinese Academy of Sciences</p>
+        <p>I am a Ph.D. student in the School of Advanced Interdisciplinary Sciences at the University of Chinese Academy of Sciences, supervised by <a href="https://www.sic.cas.cn/sourcedb_sic_cas/zw/rck/202312/t20231211_6911648.html">Jianjun Liu</a>. My research lies at the intersection of materials science and artificial intelligence, with interests in materials informatics, machine learning interatomic potentials, and intelligent agents for scientific discovery.</p>
+        <p class="personal">Outside research, I enjoy hiking, exploring mountain trails, and staying active outdoors.</p>
+        <div class="contact-links" aria-label="Contact and profiles">
+          <a href="mailto:yinliang22@mails.ucas.ac.cn">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=D1nStsUAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/yinliang420">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/liang-yin.jpg" alt="Liang Yin on a mountain hike, with clouds and ridgelines in the background" width="1024" height="1366" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><h2 id="research-title">Research interests</h2></div>
+      <p class="section-intro">I am interested in connecting materials data, atomistic simulation, and scientific reasoning to accelerate materials discovery.</p>
+      <div class="research-grid">
+        <div><h3>Materials informatics</h3><p>Extracting and organizing data from scientific literature and simulations to study relationships between materials structure and properties.</p></div>
+        <div><h3>Machine learning interatomic potentials</h3><p>Learning atomic interactions to enable efficient simulations of materials structures, energetics, and dynamics.</p></div>
+        <div><h3>Materials research agents</h3><p>Connecting literature analysis, computational tools, and scientific workflows to support materials discovery.</p></div>
+        <div><h3>Self-evolving agents</h3><p>Investigating how memory, experience, and feedback can improve agents’ reasoning and decision-making across research tasks.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Selected publications</h2></div>
+      <article class="publication">
+        <a class="paper-figure" href="assets/high-entropy-catalysts.png" aria-label="View full-size catalyst research figure">
+          <img src="assets/high-entropy-catalysts.png" width="420" height="606" loading="lazy" alt="Research workflow combining multiobjective transfer learning, catalyst and active-site screening, mechanistic analysis, and automated laboratory validation">
+        </a>
+        <div class="paper-copy">
+          <p class="venue">Science Advances <span>2026</span></p>
+          <h3><a href="https://www.science.org/doi/10.1126/sciadv.aea1170">Decoding active sites in high-entropy catalysts via attention-enhanced model</a></h3>
+          <p>Identifying active sites in high-entropy catalysts is challenging because of their vast range of local atomic environments. We developed an attention-enhanced model to jointly predict oxygen evolution reaction (OER) overpotentials and dopant formation energies. We combined computational screening with automated synthesis and experimental validation. The workflow identified TiFeNiZn-CoOOH, which achieved an overpotential of 263 mV at 100 mA cm⁻² in 1 M KOH. Large-scale predictions and electronic structure analysis highlighted the role of Zn and the favorable [CoNiZn] local coordination environment. These findings provide guidance for the design of high-entropy electrocatalysts.</p>
+          <div class="paper-links"><a href="https://www.science.org/doi/10.1126/sciadv.aea1170">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/yinliang420/LDH-OER">Code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <article class="publication">
+        <a class="paper-figure" href="assets/matcurvs.png" aria-label="View full-size MatCurvs workflow figure">
+          <img src="assets/matcurvs.png" width="4352" height="2642" loading="lazy" alt="MatCurvs workflow from scientific PDFs through subfigure segmentation and classification, axis calibration, and curve extraction to numerical coordinate data">
+        </a>
+        <div class="paper-copy">
+          <p class="venue">NeurIPS 2026 <span>Accepted · Poster</span></p>
+          <h3>MatCurvs: Article Real-Coordinate Curve Extraction for Agent-Ready Materials Reasoning</h3>
+          <p>Scientific plots contain valuable quantitative evidence that is often unavailable as reusable numerical data. We introduce MatCurvs, a materials science data resource, and MatDeplot, a method for extracting individual curves and mapping them to the original axis coordinates. The workflow connects figure parsing, axis calibration, and curve extraction to produce structured data for computational analysis. MatCurvs includes 8,026 curves from 3,817 expert-reviewed plots. We evaluated their use in quantitative reasoning on 87 questions drawn from 26 single-curve plots. With the model held fixed, adding automatically extracted curves to image inputs reduced median relative error from 19.4% to 4.3%.</p>
+          <div class="paper-links"><a href="https://github.com/yinliang420/matcurvs">Code <span aria-hidden="true">↗</span></a><span class="availability">Repository not yet public</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title">Education</h2></div>
+      <div class="education-row"><p class="dates">2025–2027<span>Expected graduation</span></p><div><h3>Ph.D. · University of Chinese Academy of Sciences</h3><p>School of Advanced Interdisciplinary Sciences</p><p class="supervisor">Supervisor: <a href="https://www.sic.cas.cn/sourcedb_sic_cas/zw/rck/202312/t20231211_6911648.html">Jianjun Liu</a></p></div></div>
+      <div class="education-row"><p class="dates">2022–2025</p><div><h3>Master’s degree</h3><p>Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences / Shanghai Institute of Ceramics, Chinese Academy of Sciences</p><p class="supervisor">Supervisor: <a href="https://www.sic.cas.cn/sourcedb_sic_cas/zw/rck/202312/t20231211_6911648.html">Jianjun Liu</a></p></div></div>
+      <div class="education-row"><p class="dates">2018–2022</p><div><h3>Bachelor’s degree · Shanghai University</h3><p>Qian Weichang College</p><p class="supervisor">Supervisor: <a href="https://hpstar.ac.cn/contents/761/81.html">Hui Gu</a></p></div></div>
+    </section>
+  </main>
+  <footer><span>Liang Yin <span lang="zh">殷亮</span></span><a href="mailto:yinliang22@mails.ucas.ac.cn">yinliang22@mails.ucas.ac.cn</a></footer>
+</body>
+</html>
